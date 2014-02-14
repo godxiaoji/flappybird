@@ -1,0 +1,77 @@
+/* 2012-12-19 Travis reset.css */
+body,h1,h2,h3,h4,h5,h6,p,blockquote,
+dl,dt,dd,ul,ol,li,
+pre,code,
+form,fieldset,legend,button,input,textarea,
+th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 Tahoma, Arial, "SimSun";}
+input,select,button,textarea{font-size:100%;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ol,ul{list-style:none;}
+em,strong{font-style:normal;font-weight:normal;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+html,body{width:100%;height:100%;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{background-color: transparent;}
+.clearfix:after{content:"\200B";display:block;height:0;clear:both;}
+.clearfix{*zoom:1;}
+
+body{overflow: hidden;}
+body{background-color: #ded895;}
+.wrap{position: relative; height: 422px; background: url(images/bg.png) repeat-x; overflow: hidden; -webkit-user-select: none; -webkit-user-select: none; *zoom:1;}
+.day{background-position: 0 0;}
+.night{background-position: 0 -512px;}
+.progress{margin-top: 400px; height: 22px; background: #DFD894 url(images/load.png) no-repeat;}
+
+.groups{position: absolute; top: 0; left: 1000px; height: 400px; width: 4000px; overflow: hidden;}
+.piping{float: left; width: 52px; margin-right: 100px;}
+.piping_top, .piping_buttom{height: 320px; background: url(images/piping.png) no-repeat -112px bottom;}
+.piping_buttom{background-position: -168px top;}
+.piping_spacing{height: 96px;}
+
+.bird{position: absolute; top: 240px; left: 66px; width: 34px; height: 34px; background: url(images/birds.png) no-repeat 0 0; _background-image: url(images/_birds.png);}
+.bird2{background-image: url(images/birds2.png); _background-image: url(images/_birds2.png);}
+.bird3{background-image: url(images/birds3.png); _background-image: url(images/_birds3.png);}
+.bird_begin{left: 50%; margin-left: -17px;}
+
+.score{position: absolute; top: 90px; left: 0; width: 100%; height: 36px; text-align: center; z-index: 9999;}
+.score em{display: inline-block; width: 28px; height: 36px; background: url(images/num.png) no-repeat 0 0;}
+.score em.n1{background-position: -28px 0;}
+.score em.n2{background-position: -56px 0;}
+.score em.n3{background-position: -84px 0;}
+.score em.n4{background-position: -112px 0;}
+.score em.n5{background-position: -140px 0;}
+.score em.n6{background-position: -168px 0;}
+.score em.n7{background-position: -196px 0;}
+.score em.n8{background-position: -224px 0;}
+.score em.n9{background-position: -252px 0;}
+
+.playbtn{position: absolute; right: 20px; top: 20px; width: 22px; height: 18px; background: url(images/laba.png) no-repeat -22px 0; cursor: pointer;}
+.playbtn_on{background-position: 0 0;}
+
+.dialog{position: absolute; top: 0; left: 50%; height: 400px; width: 226px; margin-left: -113px; overflow: hidden; z-index: 999;}
+.dialog_title{height: 50px; margin: 135px 0 20px; background: url(images/dialog.png) no-repeat 0 0;}
+.dialog_begin .dialog_title{margin-bottom: 157px; background-position: 0 0;}
+.dialog_tap .dialog_title{background-position: 0 -50px;}
+.dialog_end .dialog_title{background-position: 0 -100px;}
+.dialog_main{height: 114px; margin-bottom: 23px; background: url(images/dialog.png) no-repeat 0 -150px;}
+.dialog_medal{float: left; width: 145px; height: 114px;}
+.dialog_score{margin-left: 145px; padding-top: 10px;}
+.dialog_tips{height: 110px; margin-bottom: 27px; background: url(images/dialog.png) no-repeat 0 -270px;}
+.dialog_num{padding-top: 26px; height: 14px; text-align: center; overflow: hidden;}
+.dialog_num em{display: inline-block; width: 12px; height: 14px; margin: 0 1px; background: url(images/num.png) no-repeat 0 -40px; overflow: hidden;}
+.dialog_num em.n1{background-position: -12px -40px;}
+.dialog_num em.n2{background-position: -24px -40px;}
+.dialog_num em.n3{background-position: -36px -40px;}
+.dialog_num em.n4{background-position: -48px -40px;}
+.dialog_num em.n5{background-position: -60px -40px;}
+.dialog_num em.n6{background-position: -72px -40px;}
+.dialog_num em.n7{background-position: -84px -40px;}
+.dialog_num em.n8{background-position: -96px -40px;}
+.dialog_num em.n9{background-position: -108px -40px;}
+.dialog_btns{height: 58px; text-align: center; *zoom: 1;}
+.dialog_btns .btn{display: inline-block; width: 104px; height: 58px; background: url(images/dialog.png) no-repeat -110px -380px; cursor: pointer;  font: 16px/58px "Microsoft YaHei"; text-align: center; color: #f60; vertical-align: middle; overflow: hidden;}
+.dialog_btns a.btn:hover{text-decoration: none;}
+.dialog_btns a.startbtn{background-position: 0 -380px;}

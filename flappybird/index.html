@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>蛋疼小游戏 - FlappyBird</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css?v=201402141900" media="all">
+</head>
+<body onselectstart="return false">
+    <div class="wrap night">
+        <div class="progress" id="J_Glass"></div>
+        <div class="main">
+            <div class="groups" id="J_Groups"></div>
+            <div class="bird bird_begin" id="J_Bird"></div>
+            <div class="score" id="J_Score"></div>
+            <div class="playbtn" id="J_PlayerBtn" style="display:none"></div>
+        </div>
+        <div class="foot" id="J_DialogGroups">
+            <div class="dialog_begin dialog" id="J_DialogBegin">
+                <h3 class="dialog_title"></h3>
+                <div class="dialog_btns"><a href="javascript:void(0);" class="btn startbtn J_startbtn">Start</a></div>
+            </div>
+            <div class="dialog_tap dialog" id="J_DialogTap" style="display:none">
+                <h3 class="dialog_title"></h3>
+                <div class="dialog_tips"></div>
+                <div class="dialog_btns"><a href="javascript:void(0);" class="btn" title="按空格键跳跃">Space</a></div>
+            </div>
+            <div class="dialog_end dialog" id="J_DialogEnd" style="display:none">
+                <h3 class="dialog_title"></h3>
+                <div class="dialog_main clearfix">
+                    <div class="dialog_medal"></div>
+                    <div class="dialog_score">
+                        <div class="dialog_num" id="J_ScoreCurr"><em class="n0"></em></div>
+                        <div class="dialog_num" id="J_ScoreBest"><em class="n0"></em></div>
+                    </div>
+                </div>
+                <div class="dialog_btns"><a href="javascript:void(0);" class="btn startbtn J_startbtn" title="按回车键开始">Start</a></div>
+            </div>
+        </div>
+        <div class="sounds">
+            <div id="J_PlayerDie" data-file="sfx_die.mp3"></div>
+            <div id="J_PlayerHit" data-file="sfx_hit.mp3"></div>
+            <div id="J_PlayerPoint" data-file="sfx_point.mp3"></div>
+            <div id="J_PlayerSwooshing" data-file="sfx_swooshing.mp3"></div>
+            <div id="J_PlayerWing" data-file="sfx_wing.mp3"></div>
+        </div>
+    </div>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/zepto.touch.js"></script>
+    <script type="text/javascript" src="js/cookie.min.js"></script>
+    <script type="text/javascript" src="js/main.js?v=201402141900"></script>
+    <script type="text/javascript">
+        var $ = Zepto;
+        $(function() {
+            Main.init();
+            Player.init();
+        });
+    </script>
+	<script type="text/javascript" src="http://hm.baidu.com/h.js?9fb06808ad73ff7b921cf92a87cb8042"></script>
+</body>
+</html>
